@@ -6,14 +6,401 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <title>Air</title>
+    <link
+      rel="icon"
+      href="src/images/logo/dia-logo.svg"
+      type="image/svg+xml"
+    />
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
   </head>
   <body>
-    <h1>Dia</h1>
-    <script src="src/scripts/main.js"></script>
+    <header class="hero" id="home">
+      <div class="hero__inner">
+        <nav class="nav" aria-label="Main navigation">
+          <a class="nav__logo" href="#home" aria-label="Air home">Air</a>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#about">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#process">Work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contact us</a>
+            </li>
+          </ul>
+
+          <a class="nav__hire" href="#message">Hire us</a>
+        </nav>
+
+        <section class="agency" aria-labelledby="agency-title">
+          <div class="agency__content">
+            <h1 class="agency__title" id="agency-title">
+              Strategic Agency
+            </h1>
+            <p class="agency__text">
+              We believe in the power of bold ideas that can solve business
+              challenges.
+            </p>
+            <a class="button agency__button" href="#services">Learn more</a>
+          </div>
+
+          <div class="agency__slider slider" aria-label="Project slider">
+            <img
+              class="slider__image"
+              src="src/images/slider/slide-img-1-figma-like.jpg"
+              alt="Creative team workspace"
+            />
+
+            <div class="slider__controls">
+              <button class="slider__button" type="button" aria-label="Previous slide">
+                <img src="src/images/slider/arrow-left.svg" alt="" />
+              </button>
+              <button class="slider__button" type="button" aria-label="Next slide">
+                <img src="src/images/slider/arrow-right.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="slider__caption">
+              <p class="slider__label">Intro</p>
+              <p class="slider__text">
+                By the same illusion which lifts the horizon.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="who" id="about" aria-labelledby="who-title">
+        <div class="container who__container">
+          <h2 class="section-title who__title" id="who-title">Who we are</h2>
+          <p class="who__text">
+            We embrace a strategic approach to creative ideas. We are interested
+            in people and human relationships. This is the main thing you need
+            to know about us. We believe in the power of bold ideas that can
+            solve business challenges.
+          </p>
+        </div>
+      </section>
+
+      <section class="expertise" id="services" aria-labelledby="expertise-title">
+        <div class="container">
+          <h2 class="section-title expertise__title" id="expertise-title">
+            Our expertise
+          </h2>
+
+          <div class="expertise__grid">
+            <article class="expertise-card">
+              <img
+                class="expertise-card__image"
+                src="src/images/what-we-do/what-we-do-1-figma-like.jpg"
+                alt="Branding moodboard"
+              />
+              <h3 class="expertise-card__title">Branding</h3>
+              <p class="expertise-card__text">
+                We create additional value for companies, products, services as
+                well as verbal and visual ways to deliver it to the audience.
+              </p>
+            </article>
+
+            <article class="expertise-card">
+              <img
+                class="expertise-card__image"
+                src="src/images/what-we-do/what-we-do-2-figma-like.jpg"
+                alt="Communication sketches"
+              />
+              <h3 class="expertise-card__title">Communication</h3>
+              <p class="expertise-card__text">
+                We strive to create communications that can increase media
+                performance and help brands connect with customers.
+              </p>
+            </article>
+
+            <article class="expertise-card">
+              <img
+                class="expertise-card__image"
+                src="src/images/what-we-do/what-we-do-3-figma-like.jpg"
+                alt="Strategy workshop"
+              />
+              <h3 class="expertise-card__title">Strategy</h3>
+              <p class="expertise-card__text">
+                We create business growth strategies, from the first insight to
+                market launch and long-term brand development.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="process" aria-labelledby="process-title">
+        <div class="container process__container">
+          <div class="process__content">
+            <p class="eyebrow process__eyebrow">Process</p>
+            <h2 class="section-title process__title" id="process-title">
+              Air is a full service creative agency
+            </h2>
+            <p class="process__text">
+              Deep analytics, strong strategy and bright ideas help us build
+              brands that work. We go through every stage with attention to
+              measurable business results.
+            </p>
+          </div>
+
+          <div class="process__cards">
+            <article class="process-card">
+              <p class="process-card__number">001</p>
+              <p class="process-card__text">
+                Brand development and market positioning
+              </p>
+              <a class="process-card__link" href="#services">
+                <span class="process-card__icon"></span>
+                Learn more
+              </a>
+            </article>
+
+            <article class="process-card process-card--shifted">
+              <p class="process-card__number">002</p>
+              <p class="process-card__text">
+                Marketing campaign planning and creative direction
+              </p>
+              <a class="process-card__link" href="#services">
+                <span class="process-card__icon"></span>
+                Learn more
+              </a>
+            </article>
+
+            <article class="process-card">
+              <p class="process-card__number">003</p>
+              <p class="process-card__text">
+                Design, copywriting and visual communication systems
+              </p>
+              <a class="process-card__link" href="#services">
+                <span class="process-card__icon"></span>
+                Learn more
+              </a>
+            </article>
+
+            <article class="process-card process-card--shifted">
+              <p class="process-card__number">004</p>
+              <p class="process-card__text">
+                Launch support, analytics and continuous optimization
+              </p>
+              <a class="process-card__link" href="#services">
+                <span class="process-card__icon"></span>
+                Learn more
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="testimonials"
+        id="testimonials"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <p class="eyebrow testimonials__eyebrow">Testimonials</p>
+          <h2 class="section-title testimonials__title" id="testimonials-title">
+            What people say
+          </h2>
+
+          <div class="testimonials__cards">
+            <article class="testimonial-card">
+              <img
+                class="testimonial-card__avatar"
+                src="src/images/testimonials/testimonial-ava-1-figma-like.jpg"
+                alt="Jane Doe"
+              />
+              <p class="testimonial-card__quote">
+                Air helped us build a clear brand story and launch it with
+                confidence.
+              </p>
+              <h3 class="testimonial-card__name">Jane Doe</h3>
+              <p class="testimonial-card__position">CEO</p>
+            </article>
+
+            <article class="testimonial-card">
+              <img
+                class="testimonial-card__avatar"
+                src="src/images/testimonials/testimonial-ava-2-figma-like.jpg"
+                alt="Martin Black"
+              />
+              <p class="testimonial-card__quote">
+                The team turned complex ideas into an identity our clients
+                instantly understood.
+              </p>
+              <h3 class="testimonial-card__name">Martin Black</h3>
+              <p class="testimonial-card__position">Marketing Lead</p>
+            </article>
+
+            <article class="testimonial-card">
+              <img
+                class="testimonial-card__avatar"
+                src="src/images/testimonials/testimonial-ava-3-figma-like.jpg"
+                alt="Anna White"
+              />
+              <p class="testimonial-card__quote">
+                Their process is thoughtful, fast and focused on the result that
+                matters.
+              </p>
+              <h3 class="testimonial-card__name">Anna White</h3>
+              <p class="testimonial-card__position">Product Director</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="vision" id="vision" aria-labelledby="vision-title">
+        <div class="container vision__container">
+          <h2 class="section-title vision__title" id="vision-title">
+            Vision, Passion, Results
+          </h2>
+          <p class="vision__text">
+            We create effective strategies, powerful identities, seamless
+            interactions and memorable experiences to connect people with
+            brands.
+          </p>
+          <a class="button vision__button" href="#message">Apply</a>
+        </div>
+      </section>
+
+      <section class="connect" id="message" aria-labelledby="message-title">
+        <div class="container connect__container">
+          <section class="message" aria-labelledby="message-title">
+            <p class="eyebrow message__eyebrow">Send us a message</p>
+            <h2 class="section-title message__title" id="message-title">
+              Let us know how we can help you
+            </h2>
+
+            <form class="message__form" action="#" method="post">
+              <label class="message__field">
+                <input
+                  class="message__input"
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+              </label>
+
+              <label class="message__field">
+                <input
+                  class="message__input"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </label>
+
+              <label class="message__field">
+                <textarea
+                  class="message__input message__input--textarea"
+                  name="message"
+                  placeholder="Tell us about your project"
+                  rows="3"
+                  required
+                ></textarea>
+              </label>
+
+              <button class="button message__button" type="submit">
+                Send
+              </button>
+            </form>
+          </section>
+
+          <section class="contact" id="contact" aria-labelledby="contact-title">
+            <p class="eyebrow contact__eyebrow">Contact us</p>
+            <h2 class="section-title contact__title" id="contact-title">
+              Let us talk
+            </h2>
+
+            <div class="contact__group">
+              <p class="contact__label">Call us</p>
+              <a class="contact__link" href="tel:654321987">654 321 987</a>
+            </div>
+
+            <div class="contact__group">
+              <p class="contact__label">Visit us</p>
+              <a
+                class="contact__link"
+                href="https://www.google.com/maps/search/?api=1&query=2905+West+Drive+Buffalo+Grove"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                2905 West Drive, Buffalo Grove
+              </a>
+            </div>
+
+            <div class="contact__group">
+              <p class="contact__label">Our socials</p>
+              <ul class="contact__socials">
+                <li>
+                  <a class="contact__social" href="#" aria-label="Facebook">
+                    Fb
+                  </a>
+                </li>
+                <li>
+                  <a class="contact__social" href="#" aria-label="Twitter">
+                    Tw
+                  </a>
+                </li>
+                <li>
+                  <a class="contact__social" href="#" aria-label="Instagram">
+                    In
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="footer__logo" href="#home" aria-label="Air home">
+          <img
+            class="footer__logo-image"
+            src="src/images/logo/dia-logo.svg"
+            alt="Air"
+          />
+        </a>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#about">About us</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#services">Services</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#process">Process</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#contact">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="src/scripts/main.js"
+    ></script>
   </body>
 </html>
