@@ -1,0 +1,78 @@
+@use '../utils/extends' as *;
+@use '../utils/mixins' as *;
+@use '../utils/vars' as *;
+
+.nav {
+  // Three columns: logo, centered menu, action link.
+  @include page-container;
+
+  display: grid;
+  grid-template-columns: 170px 1fr 170px;
+  gap: 24px;
+  align-items: center;
+  min-height: 120px;
+
+  &__logo {
+    justify-self: start;
+    color: $color-white;
+    font-size: 20px;
+    line-height: 1;
+    transition: transform $transition-time;
+
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: center;
+      justify-self: center;
+    }
+  }
+
+  &__link,
+  &__hire {
+    @extend %uppercase-label;
+
+    position: relative;
+    display: inline-block;
+    color: $color-white;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -8px;
+      left: 0;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $color-blue;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform $transition-time;
+    }
+  }
+
+  &__hire {
+    justify-self: end;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &__link:hover::after,
+  &__hire:hover::after {
+    transform: scaleX(1);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr auto;
+  }
+}

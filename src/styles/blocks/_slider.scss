@@ -1,0 +1,81 @@
+@use '../utils/extends' as *;
+@use '../utils/vars' as *;
+
+.slider {
+  // Desktop slider is pinned to the lower-right of the hero frame.
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: min(50vw, 687px);
+  height: 680px;
+  border-top-left-radius: 30px;
+
+  @media (max-width: 1023px) {
+    left: 0;
+    width: 100%;
+    height: 360px;
+    border-top-left-radius: 0;
+  }
+
+  @media (max-width: 639px) {
+    height: 340px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 64px;
+    left: 48px;
+    display: flex;
+    gap: 16px;
+
+    @media (max-width: 639px) {
+      bottom: 90px;
+      left: 20px;
+    }
+  }
+
+  &__button {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: $color-white;
+    transition: transform $transition-time;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 48px;
+    left: 144px;
+    max-width: 260px;
+
+    @media (max-width: 639px) {
+      bottom: 24px;
+      left: 20px;
+    }
+  }
+
+  &__label {
+    @extend %uppercase-label;
+
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}

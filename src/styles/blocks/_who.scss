@@ -1,0 +1,21 @@
+@use '../utils/vars' as *;
+
+.who {
+  padding-block: 148px;
+
+  @media (max-width: 639px) {
+    padding-block: 80px;
+  }
+
+  &__container {
+    max-width: 754px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}

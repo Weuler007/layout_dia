@@ -1,0 +1,36 @@
+@use '../utils/vars' as *;
+
+.vision {
+  // Decorative shapes image comes from the original Figma assets.
+  min-height: 547px;
+  padding-block: 126px;
+  background-color: $color-white;
+  background-image: url('../images/Shapes.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+
+  @media (max-width: 639px) {
+    padding-block: 96px;
+  }
+
+  &__container {
+    max-width: 754px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__button {
+    margin-top: 56px;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
