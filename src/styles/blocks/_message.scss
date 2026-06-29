@@ -35,6 +35,15 @@
     &:focus {
       border-color: $color-blue;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      border-bottom-color: $color-blue;
+      -webkit-text-fill-color: $color-white;
+      box-shadow: 0 0 0 1000px $color-dark inset;
+      transition: background-color 9999s ease-in-out 0s;
+    }
   }
 
   &__input--textarea {
