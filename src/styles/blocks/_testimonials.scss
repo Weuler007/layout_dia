@@ -3,7 +3,13 @@
 
 .testimonials {
   // The card row is fixed to the Figma width: 3 * 362px + 2 * 30px.
-  padding-block: 0 168px;
+  height: 711px;
+  padding-block: 0;
+
+  @media (max-width: 1023px) {
+    height: auto;
+    padding-bottom: 120px;
+  }
 
   @media (max-width: 639px) {
     padding-bottom: 80px;
@@ -62,8 +68,8 @@
     position: relative;
     display: grid;
     place-items: center;
-    width: 250px;
-    height: 250px;
+    width: 265px;
+    height: 200px;
     margin: 0 auto;
 
     &::before,
@@ -78,13 +84,13 @@
     }
 
     &::before {
-      top: 4px;
-      left: 18px;
+      top: 28px;
+      left: 12px;
     }
 
     &::after {
-      top: 97px;
-      left: 115px;
+      top: 120px;
+      left: 112px;
     }
   }
 
@@ -103,28 +109,19 @@
   }
 
   &__quote {
-    position: relative;
     width: 250px;
     margin: 31px auto 0;
-    padding-top: 36px;
     color: $color-text;
     font-size: 13px;
     font-weight: 600;
     line-height: 1.5;
+  }
 
-    &::before {
-      content: '\201C';
-      position: absolute;
-      top: 0;
-      left: calc(50% - 10.29px);
-      width: 20.58px;
-      height: 18.48px;
-      color: $color-blue;
-      font-family: Poppins, Arial, Helvetica, sans-serif;
-      font-size: 38px;
-      font-weight: 700;
-      line-height: 0.8;
-    }
+  &__quote-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 12px;
   }
 
   &__name {
