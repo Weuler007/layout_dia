@@ -49,22 +49,12 @@
   &__button {
     display: grid;
     place-items: center;
-    width: 56px;
-    height: 56px;
+    width: 32px;
+    height: 32px;
     padding: 0;
     border-radius: 50%;
     background-color: $color-white;
     transition: transform $transition-time;
-
-    @media (max-width: 1023px) {
-      width: 40px;
-      height: 40px;
-    }
-
-    @media (max-width: 639px) {
-      width: 32px;
-      height: 32px;
-    }
 
     &:hover {
       transform: scale(1.1);
@@ -98,16 +88,10 @@
 
   &__text {
     color: $color-white;
-    font-size: 24px;
-    line-height: 1.35;
-
-    @media (max-width: 1023px) {
-      font-size: 16px;
-    }
-
-    @media (max-width: 639px) {
-      font-size: 14px;
-      line-height: 1.4;
-    }
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.4;
   }
 }
