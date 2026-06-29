@@ -103,8 +103,4 @@ if (slider && sliderImage && sliderLabel && sliderText) {
       button.blur();
     });
   });
-} else {
-  sliderButtons.forEach(button => {
-    button.blur();
-  });
 }
