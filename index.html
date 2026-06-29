@@ -40,7 +40,19 @@
             Air
           </a>
 
-          <ul class="nav__list">
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+            <span class="nav__toggle-line"></span>
+          </button>
+
+          <ul class="nav__list" id="main-menu">
             <li class="nav__item">
               <a class="nav__link" href="#about">About us</a>
             </li>
@@ -82,6 +94,7 @@
                 class="slider__button"
                 type="button"
                 aria-label="Previous slide"
+                data-slider-direction="previous"
               >
                 <img
                   src="src/images/slider/arrow-left.svg"
@@ -92,6 +105,7 @@
                 class="slider__button"
                 type="button"
                 aria-label="Next slide"
+                data-slider-direction="next"
               >
                 <img
                   src="src/images/slider/arrow-right.svg"
