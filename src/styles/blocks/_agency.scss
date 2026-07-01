@@ -2,7 +2,7 @@
 @use '../utils/vars' as *;
 
 .agency {
-  // Hero text sits beside the absolute-positioned slider.
+
   @include page-container;
 
   position: relative;
